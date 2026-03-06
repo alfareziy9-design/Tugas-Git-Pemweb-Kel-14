@@ -1,45 +1,257 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tentang Kami - My Website Project</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tentang Kami - Platform Microlearning</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#4F46E5',
+            secondary: '#14B8A6',
+            dark: '#1F2937',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+
+    .member-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .member-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(79, 70, 229, 0.12);
+    }
+    .avatar-ring {
+      background: linear-gradient(135deg, #4F46E5, #14B8A6);
+      padding: 3px;
+      border-radius: 9999px;
+      display: inline-block;
+    }
+  </style>
 </head>
 
-<body>
-    <header>
-        <h1>Tentang Kami</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="about.html">Tentang</a></li>
-                <li><a href="portfolio.html">Portofolio</a></li>
-                <li><a href="contact.html">Kontak</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Profil Singkat</h2>
-            <p>Kami adalah tim pengembang web yang berfokus pada pembuatan
-                aplikasi modern dan responsif.</p>
-            <img src="assets/images/team.jpg" alt="Foto Tim">
-        </section>
-        <section>
-            <h2>Visi dan Misi</h2>
-            <p>Visi kami adalah menciptakan solusi digital yang memudahkan hidup
-                masyarakat dalam berpengetahuan khalayak umum. Misi kami antara lain:</p>
-            <ul>
-                <li>Menyediakan layanan pengetahuan berkualitas tinggi</li>
-                <li>Memprioritaskan pengguna dalam pengetahuan umum</li>
-                <li>Terus berinovasi sesuai tren teknologi terbaru</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Platform Microlearning</p>
-    </footer>
-</body>
+<body class="font-sans text-gray-700 bg-gray-50">
 
+  <!-- NAVBAR (sama dengan index.html) -->
+  <nav class="bg-white shadow-sm fixed w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-20 items-center">
+        <div class="flex-shrink-0 flex items-center gap-2">
+          <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white font-bold">H</div>
+          <span class="font-bold text-2xl text-dark">HOME</span>
+        </div>
+        <div class="hidden md:flex space-x-8">
+          <a href="about.html" class="text-primary font-semibold border-b-2 border-primary pb-1 transition">Tentang kami</a>
+          <a href="portfolio.html" class="text-gray-600 hover:text-primary font-medium transition">Portfolio</a>
+          <a href="contact.html" class="text-gray-600 hover:text-primary font-medium transition">Hubungi kami</a>
+        </div>
+        <div class="hidden md:flex items-center space-x-4">
+          <a href="login.html" class="text-gray-600 hover:text-primary font-medium">Masuk</a>
+          <a href="signup.html" class="bg-primary hover:bg-indigo-700 text-white px-5 py-2.5 rounded-full font-medium transition shadow-lg shadow-indigo-500/30">Daftar Gratis</a>
+        </div>
+        <div class="md:hidden flex items-center">
+          <button class="text-gray-600 hover:text-primary focus:outline-none">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="pt-32 pb-16 bg-gradient-to-br from-indigo-50 to-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span class="inline-block py-1 px-3 rounded-full bg-teal-100 text-teal-700 text-sm font-semibold mb-4">
+        👋 Kenali Tim Kami
+      </span>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-dark leading-tight mb-4">
+        Tentang <span class="text-primary">Kami</span>
+      </h1>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        Kami adalah tim yang bersemangat dalam menghadirkan pengalaman belajar digital yang menyenangkan dan efektif untuk semua kalangan.
+      </p>
+    </div>
+  </section>
+
+  <!-- VISI & MISI -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+
+        <!-- Visi -->
+        <div class="bg-indigo-50 rounded-2xl p-8 border border-indigo-100">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white text-lg">🎯</div>
+            <h2 class="text-2xl font-bold text-dark">Visi</h2>
+          </div>
+          <p class="text-gray-600 leading-relaxed">
+            <!-- EDIT: Ganti dengan visi kelompok kalian -->
+            Menjadi platform microlearning terdepan yang membantu setiap individu berkembang melalui pendidikan digital yang mudah diakses dan berkualitas tinggi.
+          </p>
+        </div>
+
+        <!-- Misi -->
+        <div class="bg-teal-50 rounded-2xl p-8 border border-teal-100">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-secondary rounded-xl flex items-center justify-center text-white text-lg">🚀</div>
+            <h2 class="text-2xl font-bold text-dark">Misi</h2>
+          </div>
+          <ul class="space-y-3 text-gray-600">
+            <!-- EDIT: Ganti atau tambah poin misi kalian -->
+            <li class="flex items-start gap-2">
+              <span class="text-secondary font-bold mt-0.5">✓</span>
+              <span>Menyediakan konten pembelajaran berkualitas tinggi dan mudah dipahami</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-secondary font-bold mt-0.5">✓</span>
+              <span>Memprioritaskan pengalaman pengguna dalam setiap fitur yang dikembangkan</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-secondary font-bold mt-0.5">✓</span>
+              <span>Terus berinovasi mengikuti perkembangan teknologi dan kebutuhan pelajar</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ANGGOTA TIM -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <span class="inline-block py-1 px-3 rounded-full bg-indigo-100 text-primary text-sm font-semibold mb-3">
+          Tim Kami
+        </span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-dark">Kenali Anggota Kelompok</h2>
+        <p class="text-gray-500 mt-3">Orang-orang di balik proyek ini</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- ======== ANGGOTA 1 ======== -->
+        <div class="member-card bg-white rounded-2xl p-8 text-center shadow-sm border border-gray-100">
+          <div class="flex justify-center mb-4">
+            <div class="avatar-ring">
+              <!-- EDIT: Ganti src dengan foto anggota 1, atau gunakan initial -->
+              <img
+                src="https://raw.githubusercontent.com/stevannprb/FOTO2-UNTUK-TUGAS/42553ae6f97bcb72988e1b4c54c9066abf752d7f/WhatsApp%20Image%202026-03-01%20at%2021.27.41.jpeg" 
+                alt="Foto Tugas Stevann"
+                class="w-24 h-24 rounded-full object-cover"
+              />
+            </div>
+          </div>
+          <!-- EDIT: Ganti dengan nama, peran, dan deskripsi anggota 1 -->
+          <h3 class="text-xl font-bold text-dark mb-1">Stevan Agustin Purba</h3>
+          <span class="inline-block text-xs font-semibold text-primary bg-indigo-50 px-3 py-1 rounded-full mb-3">
+            Front-end Developer
+          </span>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            Bertanggung jawab pada desain tampilan dan pengalaman pengguna. Gemar membuat antarmuka yang bersih dan intuitif.
+          </p>
+          <!-- EDIT: Ganti href dengan profil media sosial / email anggota 1 -->
+          <div class="flex justify-center gap-3 mt-5">
+            <a href="#" class="text-gray-400 hover:text-primary transition" title="GitHub">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.38 7.86 10.9.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.7 5.4-5.27 5.68.41.36.78 1.06.78 2.13v3.16c0 .31.21.67.8.56A10.51 10.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-primary transition" title="LinkedIn">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14C2.24 0 0 2.24 0 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5V5c0-2.76-2.24-5-5-5zM7.12 20H4V9h3.12v11zM5.56 7.7C4.5 7.7 3.64 6.83 3.64 5.77S4.5 3.84 5.56 3.84s1.92.87 1.92 1.93S6.62 7.7 5.56 7.7zM20 20h-3.12v-5.37c0-1.28-.02-2.93-1.79-2.93-1.79 0-2.06 1.4-2.06 2.84V20H9.91V9h3v1.5h.04c.42-.79 1.44-1.63 2.97-1.63 3.17 0 3.76 2.09 3.76 4.8V20z"/></svg>
+            </a>
+            <a href="mailto:email@example.com" class="text-gray-400 hover:text-primary transition" title="Email">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- ======== ANGGOTA 2 ======== -->
+        <div class="member-card bg-white rounded-2xl p-8 text-center shadow-sm border border-gray-100">
+          <div class="flex justify-center mb-4">
+            <div class="avatar-ring">
+              <!-- EDIT: Ganti src dengan foto anggota 2 -->
+              <img
+                src="https://i.pravatar.cc/150?img=25"
+                alt="Foto Anggota 2"
+                class="w-24 h-24 rounded-full object-cover"
+              />
+            </div>
+          </div>
+          <!-- EDIT: Ganti dengan nama, peran, dan deskripsi anggota 2 -->
+          <h3 class="text-xl font-bold text-dark mb-1">Afianto Hadi N.</h3>
+          <span class="inline-block text-xs font-semibold text-secondary bg-teal-50 px-3 py-1 rounded-full mb-3">
+            Back-end Developer
+          </span>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            Menangani logika server, basis data, dan integrasi API. Memastikan sistem berjalan cepat, aman, dan andal.
+          </p>
+          <!-- EDIT: Ganti href dengan profil media sosial / email anggota 2 -->
+          <div class="flex justify-center gap-3 mt-5">
+            <a href="#" class="text-gray-400 hover:text-secondary transition" title="GitHub">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.38 7.86 10.9.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.7 5.4-5.27 5.68.41.36.78 1.06.78 2.13v3.16c0 .31.21.67.8.56A10.51 10.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-secondary transition" title="LinkedIn">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14C2.24 0 0 2.24 0 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5V5c0-2.76-2.24-5-5-5zM7.12 20H4V9h3.12v11zM5.56 7.7C4.5 7.7 3.64 6.83 3.64 5.77S4.5 3.84 5.56 3.84s1.92.87 1.92 1.93S6.62 7.7 5.56 7.7zM20 20h-3.12v-5.37c0-1.28-.02-2.93-1.79-2.93-1.79 0-2.06 1.4-2.06 2.84V20H9.91V9h3v1.5h.04c.42-.79 1.44-1.63 2.97-1.63 3.17 0 3.76 2.09 3.76 4.8V20z"/></svg>
+            </a>
+            <a href="mailto:email@example.com" class="text-gray-400 hover:text-secondary transition" title="Email">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- ======== ANGGOTA 3 ======== -->
+        <div class="member-card bg-white rounded-2xl p-8 text-center shadow-sm border border-gray-100 sm:col-span-2 lg:col-span-1 sm:max-w-sm sm:mx-auto lg:max-w-none">
+          <div class="flex justify-center mb-4">
+            <div class="avatar-ring">
+              <!-- EDIT: Ganti src dengan foto anggota 3 -->
+              <img
+                src="https://i.pravatar.cc/150?img=47"
+                alt="Foto Anggota 3"
+                class="w-24 h-24 rounded-full object-cover"
+              />
+            </div>
+          </div>
+          <!-- EDIT: Ganti dengan nama, peran, dan deskripsi anggota 3 -->
+          <h3 class="text-xl font-bold text-dark mb-1">Moch. Yusuf Alfarezi</h3>
+          <span class="inline-block text-xs font-semibold text-purple-600 bg-purple-50 px-3 py-1 rounded-full mb-3">
+            UI/UX Designer
+          </span>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            Merancang alur pengguna dan estetika visual platform. Memastikan setiap halaman terasa nyaman dan mudah digunakan.
+          </p>
+          <!-- EDIT: Ganti href dengan profil media sosial / email anggota 3 -->
+          <div class="flex justify-center gap-3 mt-5">
+            <a href="#" class="text-gray-400 hover:text-purple-600 transition" title="GitHub">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.38 7.86 10.9.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.7 5.4-5.27 5.68.41.36.78 1.06.78 2.13v3.16c0 .31.21.67.8.56A10.51 10.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-purple-600 transition" title="LinkedIn">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14C2.24 0 0 2.24 0 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5V5c0-2.76-2.24-5-5-5zM7.12 20H4V9h3.12v11zM5.56 7.7C4.5 7.7 3.64 6.83 3.64 5.77S4.5 3.84 5.56 3.84s1.92.87 1.92 1.93S6.62 7.7 5.56 7.7zM20 20h-3.12v-5.37c0-1.28-.02-2.93-1.79-2.93-1.79 0-2.06 1.4-2.06 2.84V20H9.91V9h3v1.5h.04c.42-.79 1.44-1.63 2.97-1.63 3.17 0 3.76 2.09 3.76 4.8V20z"/></svg>
+            </a>
+            <a href="mailto:email@example.com" class="text-gray-400 hover:text-purple-600 transition" title="Email">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-white border-t border-gray-100 py-8 mt-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-gray-400 text-sm">&copy; 2026 Platform Microlearning. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
 </html>
