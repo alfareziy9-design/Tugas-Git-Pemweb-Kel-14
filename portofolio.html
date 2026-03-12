@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Tim</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="portofolio.css">
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#4F46E5',
+secondary: '#14B8A6',
+dark: '#1F2937',
+}
+}
+}
+}
+</script>
+
+</head>
+
+<body class="font-sans text-gray-700 bg-gray-50">
+
+
+<!-- Navbar -->
+<nav class="bg-white shadow-sm fixed w-full z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-20 items-center">
+
+<a href="index.html" class="flex-shrink-0 flex items-center gap-2">
+<div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white font-bold">H</div>
+<span class="font-bold text-2xl text-dark">HOME</span>
+</a>
+
+<div class="hidden md:flex space-x-8">
+<a href="about.html" class="text-gray-600 hover:text-primary font-medium transition">Tentang Kami</a>
+<a href="portfolio.html" class="text-gray-600 hover:text-primary font-medium transition">Portfolio</a>
+<a href="contact.html" class="text-gray-600 hover:text-primary font-medium transition">Hubungi Kami</a>
+</div>
+
+<div class="hidden md:flex items-center space-x-4">
+<a href="login.html" class="text-gray-600 hover:text-primary font-medium">Masuk</a>
+
+<a href="signup.html"
+class="bg-primary hover:bg-indigo-700 text-white px-5 py-2.5 rounded-full font-medium transition shadow-lg shadow-indigo-500/30">
+Daftar Gratis
+</a>
+</div>
+
+</div>
+</div>
+</nav>
+
+
+<!-- Header Portfolio -->
+<section class="pt-32 pb-16 text-center">
+
+<h1 class="text-4xl md:text-5xl font-extrabold text-dark mb-4">
+Portofolio Tim
+</h1>
+
+<p class="text-gray-600 max-w-2xl mx-auto">
+Berikut adalah kumpulan tugas individu dari masing-masing anggota tim kami.
+</p>
+
+</section>
+
+
+<!-- Portfolio Cards -->
+<section class="pb-20">
+
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+
+
+<!-- Anggota 1 -->
+<div class="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-xl transition">
+
+<img
+src="https://raw.githubusercontent.com/stevannprb/FOTO2-UNTUK-TUGAS/42553ae6f97bcb72988e1b4c54c9066abf752d7f/WhatsApp%20Image%202026-03-01%20at%2021.27.41.jpeg"
+class="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+/>
+
+<h3 class="text-xl font-bold text-dark">
+Anggota 1
+</h3>
+
+<p class="text-primary font-medium mb-6">
+Stevan Agustin Purba
+</p>
+
+<ul class="space-y-3 text-gray-600">
+
+<li>
+<a href="#" class="hover:text-primary transition">
+Menambahkan Website HTML
+</a>
+</li>
+
+<li>
+<a href="#" class="hover:text-primary transition">
+Form Validation
+</a>
+</li>
+
+<li>
+<a href="#" class="hover:text-primary transition">
+Responsive Web
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+
+<!-- Anggota 2 -->
+<div class="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-xl transition">
+
+<img
+src="https://raw.githubusercontent.com/alfareziy9-design/Tugas-Pemweb-Kel-14/main/Image/foto_fian.jpg"
+class="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+/>
+
+<h3 class="text-xl font-bold text-dark">
+Anggota 2
+</h3>
+
+<p class="text-primary font-medium mb-6">
+Afianto Had N
+</p>
+
+<ul class="space-y-3 text-gray-600">
+
+<li>
+<a href="#" class="hover:text-primary transition">
+Membuat fitur Portofolio
+</a>
+</li>
+
+<li>
+<a href="#" class="hover:text-primary transition">
+Membuat Folder Image
+</a>
+</li>
+
+<li>
+<a href="#" class="hover:text-primary transition">
+Menambahkan Website HTML
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+
+<!-- Anggota 3 -->
+<div class="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-xl transition">
+
+<img
+src="https://raw.github.com/alfareziy9-design/Tugas-Pemweb-Kel-14/main/Image/foto_farezi.jpg"
+class="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+/>
+
+<h3 class="text-xl font-bold text-dark">
+Anggota 3
+</h3>
+
+<p class="text-primary font-medium mb-6">
+Moch. Yusuf Alfarezi
+</p>
+
+<ul class="space-y-3 text-gray-600">
+
+<li>
+<a href="#" class="hover:text-primary transition">
+Membuat Github Repository
+</a>
+</li>
+
+<li>
+<a href="#" class="hover:text-primary transition">
+Membuat CSS
+</a>
+</li>
+
+<li>
+<a href="#" class="hover:text-primary transition">
+Membuat Website HTML
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-white border-t py-6 text-center text-gray-500">
+
+<p>
+© 2026 Platform Microlearning. All rights reserved.
+</p>
+
+</footer>
+
+
+</body>
+</html>
