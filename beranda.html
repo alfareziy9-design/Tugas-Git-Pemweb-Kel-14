@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Platform Microlearning - Digi</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+html{
+scroll-behavior:smooth;
+}
+</style>
+
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#4F46E5',
+secondary: '#14B8A6',
+dark: '#1F2937',
+}
+}
+}
+}
+</script>
+
+</head>
+
+<body class="font-sans text-gray-700 bg-gray-50">
+
+
+<!-- NAVBAR -->
+<nav class="bg-white shadow-sm fixed w-full z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-20 items-center">
+
+<!-- Logo -->
+<a href="#home" class="flex items-center gap-2">
+<div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white font-bold">H</div>
+<span class="font-bold text-2xl text-dark">HOME</span>
+</a>
+
+<!-- Menu -->
+<div class="hidden md:flex space-x-8">
+<a href="#visi-misi" class="text-gray-600 hover:text-primary font-medium">Visi & Misi</a>
+<a href="#about" class="text-gray-600 hover:text-primary font-medium">Tentang Kami</a>
+<a href="#portfolio" class="text-gray-600 hover:text-primary font-medium">Portfolio</a>
+<a href="#contact" class="text-gray-600 hover:text-primary font-medium">Hubungi Kami</a>
+</div>
+
+<!-- Login & Signup -->
+<div class="hidden md:flex items-center space-x-4">
+<a href="login.html" class="text-gray-600 hover:text-primary font-medium">Masuk</a>
+
+<a href="signup.html"
+class="bg-primary hover:bg-indigo-700 text-white px-5 py-2.5 rounded-full font-medium transition shadow-lg shadow-indigo-500/30">
+Daftar Gratis
+</a>
+</div>
+
+<!-- Mobile Menu -->
+<div class="md:hidden flex items-center">
+<button class="text-gray-600 hover:text-primary focus:outline-none">
+<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<path stroke-linecap="round"
+stroke-linejoin="round"
+stroke-width="2"
+d="M4 6h16M4 12h16M4 18h16"/>
+</svg>
+</button>
+</div>
+
+</div>
+</div>
+</nav>
+
+
+<!-- BERANDA -->
+<section id="home" class="pt-32 pb-20 bg-gradient-to-br from-indigo-50 to-white">
+
+<div class="max-w-7xl mx-auto px-4 flex flex-col-reverse md:flex-row items-center">
+
+<div class="w-full md:w-1/2 text-center md:text-left">
+
+<span class="inline-block py-1 px-3 rounded-full bg-teal-100 text-teal-700 text-sm font-semibold mb-4">
+🚀 Belajar Tanpa Batas
+</span>
+
+<h1 class="text-4xl md:text-6xl font-extrabold text-dark mb-6">
+Tingkatkan Skill Anda <br>
+<span class="text-primary">Hari Ini Juga</span>
+</h1>
+
+<p class="text-lg text-gray-600 mb-8">
+Akses dan mulai pembelajaran Anda dengan platform belajar interaktif.
+</p>
+
+<div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+
+<a href="#" class="bg-primary hover:bg-indigo-700 text-white px-8 py-3 rounded-full font-bold shadow-xl">
+Mulai Belajar
+</a>
+
+<a href="#" class="bg-white border border-gray-200 px-8 py-3 rounded-full font-bold">
+Lihat Demo
+</a>
+
+</div>
+
+</div>
+
+<div class="w-full md:w-1/2 flex justify-center">
+<img src="https://illustrations.popsy.co/gray/web-design.svg" class="w-96">
+</div>
+
+</div>
+</section>
+
+
+<!-- VISI & MISI -->
+<section id="visi-misi" class="py-20 bg-white">
+
+<div class="max-w-7xl mx-auto px-4">
+
+<h2 class="text-3xl font-bold text-center mb-12">
+Visi & Misi
+</h2>
+
+<div class="grid md:grid-cols-2 gap-10">
+
+<!-- VISI -->
+<div class="bg-indigo-50 rounded-2xl p-8 border border-indigo-100 shadow-sm">
+
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white">🎯</div>
+<h3 class="text-2xl font-bold text-dark">Visi</h3>
+</div>
+
+<p class="text-gray-600">
+Menjadi platform microlearning terdepan yang membantu setiap individu berkembang melalui pendidikan digital yang mudah diakses dan berkualitas tinggi.
+</p>
+
+</div>
+
+<!-- MISI -->
+<div class="bg-teal-50 rounded-2xl p-8 border border-teal-100 shadow-sm">
+
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 bg-secondary rounded-xl flex items-center justify-center text-white">🚀</div>
+<h3 class="text-2xl font-bold text-dark">Misi</h3>
+</div>
+
+<ul class="space-y-3 text-gray-600">
+
+<li class="flex gap-2">
+<span class="text-secondary font-bold">✓</span>
+<span>Menyediakan konten pembelajaran berkualitas tinggi</span>
+</li>
+
+<li class="flex gap-2">
+<span class="text-secondary font-bold">✓</span>
+<span>Memprioritaskan pengalaman pengguna</span>
+</li>
+
+<li class="flex gap-2">
+<span class="text-secondary font-bold">✓</span>
+<span>Terus berinovasi mengikuti perkembangan teknologi</span>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- TENTANG KAMI -->
+<section id="about" class="py-20 bg-gray-50">
+
+<div class="max-w-6xl mx-auto px-6">
+
+<h2 class="text-3xl font-bold text-center mb-10">
+Tentang Kami
+</h2>
+
+<p class="text-center text-gray-600 max-w-3xl mx-auto mb-16">
+Kami adalah tim mahasiswa yang membuat website ini sebagai media
+untuk menampilkan tugas dan project yang telah kami kerjakan.
+</p>
+
+<div class="grid md:grid-cols-3 gap-10">
+
+<div class="bg-white shadow rounded-xl p-6 text-center">
+<img src="https://raw.githubusercontent.com/stevannprb/FOTO2-UNTUK-TUGAS/42553ae6f97bcb72988e1b4c54c9066abf752d7f/WhatsApp%20Image%202026-03-01%20at%2021.27.41.jpeg"
+class="w-24 h-24 mx-auto rounded-full mb-4 object-cover">
+<h3 class="font-semibold">Anggota 1</h3>
+<p class="text-gray-500 text-sm">Stevan Agustin Purba</p>
+</div>
+
+<div class="bg-white shadow rounded-xl p-6 text-center">
+<img src="https://raw.githubusercontent.com/alfareziy9-design/Tugas-Pemweb-Kel-14/main/Image/foto_fian.jpg"
+class="w-24 h-24 mx-auto rounded-full mb-4 object-cover">
+<h3 class="font-semibold">Anggota 2</h3>
+<p class="text-gray-500 text-sm">Afianto Hadi N</p>
+</div>
+
+<div class="bg-white shadow rounded-xl p-6 text-center">
+<img src="https://raw.githubusercontent.com/alfareziy9-design/Tugas-Pemweb-Kel-14/main/Image/foto_farezi.jpg"
+class="w-24 h-24 mx-auto rounded-full mb-4 object-cover">
+<h3 class="font-semibold">Anggota 3</h3>
+<p class="text-gray-500 text-sm">Moch. Yusuf Alfarezi</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="py-20">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<h2 class="text-3xl font-bold text-center mb-12">
+Portfolio Tugas
+</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="bg-white shadow rounded-xl p-6">
+<h3 class="font-semibold mb-2">Tugas HTML & CSS</h3>
+<p class="text-gray-600 text-sm">
+Membuat website menggunakan HTML dan CSS.
+</p>
+</div>
+
+<div class="bg-white shadow rounded-xl p-6">
+<h3 class="font-semibold mb-2">Website Tailwind</h3>
+<p class="text-gray-600 text-sm">
+Membuat website portfolio menggunakan Tailwind CSS.
+</p>
+</div>
+
+<div class="bg-white shadow rounded-xl p-6">
+<h3 class="font-semibold mb-2">Project GitHub</h3>
+<p class="text-gray-600 text-sm">
+Membuat aplikasi berbasis web.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- HUBUNGI KAMI -->
+<section id="contact" class="py-20 bg-white">
+
+<div class="max-w-3xl mx-auto px-6">
+
+<h2 class="text-3xl font-bold text-center mb-10">
+Hubungi Kami
+</h2>
+
+<form class="space-y-6 bg-gray-50 p-8 rounded-xl shadow">
+
+<div>
+<label class="block mb-2">Nama</label>
+<input type="text" class="w-full border rounded px-4 py-2">
+</div>
+
+<div>
+<label class="block mb-2">Email</label>
+<input type="email" class="w-full border rounded px-4 py-2">
+</div>
+
+<div>
+<label class="block mb-2">Pesan</label>
+<textarea rows="4" class="w-full border rounded px-4 py-2"></textarea>
+</div>
+
+<button class="w-full bg-primary text-white py-3 rounded font-semibold">
+Kirim Pesan
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-white text-center py-6">
+<p>© 2026 Platform Microlearning. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
